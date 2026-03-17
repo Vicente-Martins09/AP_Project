@@ -1,5 +1,5 @@
 import numpy as np
-from src.dataset import Dataset
+from dataset import Dataset
 import matplotlib.pyplot as plt
 import pandas as pd
 from collections import Counter
