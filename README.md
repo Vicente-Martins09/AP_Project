@@ -23,7 +23,6 @@ Pasta central contendo os ficheiros exigidos para a avaliação, nomeados de aco
 
 ### 2. 📁 Pasta `numpy/` (Motor de Implementação Própria)
 Contém a base de código modular construída do zero para suportar a Submissão A.
-* 📁 **`logistic_regression/`**: Scripts dedicados ao modelo baseline de regressão logística.
 * 📄 **Scripts Core (`layers.py`, `activation.py`, `losses.py`, `optimizer.py`, `metrics.py`, `neuralnet.py`, `data.py`)**: Implementação matemática das redes neuronais, cálculo de gradientes, funções de custo e processamento de batches.
 
 ### 3. Ficheiros na Raiz (Dados e Pré-processamento)
