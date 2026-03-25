@@ -35,10 +35,11 @@ class Layer(metaclass=ABCMeta):
 
 class DenseLayer (Layer):
     
-    def __init__(self, n_units, input_shape = None):
+    def __init__(self, n_units, input_shape = None, l2_lambda = 1e-4):
         super().__init__()
         self.n_units = n_units
         self._input_shape = input_shape
+        self.l2_lambda = l2_lambda
 
         self.input = None
         self.output = None
@@ -70,7 +71,7 @@ class DenseLayer (Layer):
     
          # computes the weight error: dE/dW = X.T * dE/dY
          # SHAPES: (input_columns, output_columns) = (input_columns, batch_size) * (batch_size, output_columns)
-         weights_error = np.dot(self.input.T, output_error)
+         weights_error = np.dot(self.input.T, output_error) + self.l2_lambda * self.weights
          # computes the bias error: dE/dB = dE/dY
          # SHAPES: (1, output_columns) = SUM over the rows of a matrix of shape (batch_size, output_columns)
          bias_error = np.sum(output_error, axis=0, keepdims=True)
