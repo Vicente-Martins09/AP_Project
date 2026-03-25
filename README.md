@@ -29,6 +29,12 @@ Contém a base de código modular construída do zero para suportar a Submissão
 Contém o material relativo à Tarefa 1 (Recolha e Tratamento de Dados).
 * 📄 **`dataset_manipulation.ipynb`**: Notebook central de *Data Wrangling* responsável pela filtragem, limpeza, baralhamento (*shuffle*) e formatação dos IDs.
 * 📄 **`testdata.py`**: Script de segurança para validar a estrutura e tamanho dos ficheiros CSV.
-* 📊 **`dataset_final.csv`**: O dataset final, imaculado e balanceado, usado para treinar os modelos finais.
+* 📊 **`dataset_final.csv`**: O dataset final, imaculado e balanceado, usado para treinar os modelos finais da subm1.
 * 📊 **`subm1.csv`**: Ficheiro fornecido pelo docente com os casos de teste para classificação (sem labels).
+* 📊 **`dataset_final_v2.csv`**: O nosso dataset_final mas com o subm1 com labels reveladas.
+* 📊 **`subm1_predicetd_test.csv`**: Ficheiro previsto com o modelo para comparar com o subm1_labels revealed.csv para podermos testar (foi treinado com o dataset_final ou dataset_distribuido_teste)
+* 📊 **`subm1_labels_revealed.csv`**: Ficheiro fornecido pelo docente com as labels reveladas do subm1.csv
+* 📊 **`dataset_distribuido.csv`**: dataset_final_v2.csv mas com os textos humanos a ser 1/3 dos casos totais.
+* 📊 **`dataset_distribuido_igualmente.csv`**: dataset_final_v2.csv mas com os textos humanos e das AIs com a mesma quantidade de ocorrências.
+* 📊 **`dataset_distribuido_teste.csv`**: dataset_final_v1.csv mas com os textos humanos a ser 1/3 dos casos totais.
 * 📊 **Outros CSVs (`dataset_ai.csv`, `dataset_human.csv`, etc.)**: Ficheiros de dados parciais em bruto que serviram de base.

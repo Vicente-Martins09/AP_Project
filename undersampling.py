@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. Carregar o teu dataset atual
-ficheiro_atual = 'dataset_final_v2.csv' 
+ficheiro_atual = 'dataset_final.csv' 
 ficheiro_novo = 'dataset_distribuido.csv'
 
 print("⚖️ A ajustar a distribuição do dataset para a regra (1/3 Humanos)...\n")
@@ -17,7 +17,7 @@ try:
     # 3. Calcular a quota para cada IA
     # Se Humanos = 1/3, então as 4 IAs juntas = 2/3.
     # Cada IA será metade dos humanos (1/6 do total).
-    n_por_ia = n_human // 2 
+    n_por_ia = n_human // 2
     print(f"🤖 Quota calculada para CADA classe de IA: {n_por_ia}")
     
     # 4. Fazer o Undersampling das IAs (cortar o excesso aleatoriamente)
