@@ -1,13 +1,11 @@
 import pandas as pd
 
-# 1. Nomes dos ficheiros (ajusta o nome do ficheiro do professor se for diferente)
-ficheiro_treino_antigo = 'dataset_final.csv'
-ficheiro_novas_labels = 'subm1_labels_revealed.csv' 
-ficheiro_treino_atualizado = 'dataset_final_v2.csv' # Criamos um v2 para não esmagar o original sem querer
-
-print("🚀 A iniciar a atualização do Dataset de Treino...\n")
-
 try:
+    # 1. Nomes dos ficheiros (ajusta o nome do ficheiro do professor se for diferente)
+    ficheiro_treino_antigo = 'dataset_final_v2.csv'
+    ficheiro_novas_labels = 'subm2_labels_revealed.csv' 
+    ficheiro_treino_atualizado = 'dataset_final_v3.csv' # Criamos um v3 para não esmagar o original sem querer
+    
     # 2. Carregar os dados
     df_antigo = pd.read_csv(ficheiro_treino_antigo, sep=';')
     df_novo = pd.read_csv(ficheiro_novas_labels, sep=';')
