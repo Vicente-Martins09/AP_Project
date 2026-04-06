@@ -58,7 +58,8 @@ Contém o material relativo à Tarefa 1 (Recolha e Tratamento de Dados).
 * 📊 **`dataset_ai_anthropic.csv`**: conjunto de dados gerado pela Anthropic, contendo as primeiras 10 palavras de cada entrada do dataset_wiki_humanos.csv.
 * 📊 **`dataset_ai_google.csv`**: conjunto de dados gerado pela Anthropic, contendo as primeiras 10 palavras de cada entrada do dataset_wiki_humanos.csv.
 * 📊 **`dataset_ai_openai.csv`**: conjunto de dados gerado pela Anthropic, contendo as primeiras 10 palavras de cada entrada do dataset_wiki_humanos.csv.
-* 📊 **`dataset_master_final.csv`**: conjunto de dados que combina e mistura os ficheiros dataset_wiki_humanos.csv, dataset_ai_anthropic.csv, dataset_ai_google.csv e dataset_ai_openai.csv.
+* 📊 **`dataset_ai_groq.csv` e `dataset_ai_groq_fast.csv`**: conjunto de dados gerado pela Meta, contendo as primeiras 10 palavras de cada entrada do dataset_wiki_humanos.csv.
+* 📊 **`dataset_master_final.csv`**: conjunto de dados que combina e mistura os ficheiros dataset_wiki_humanos.csv, dataset_ai_anthropic.csv, dataset_ai_google.csv, dataset_ai_openai.csv, dataset_ai_groq.csv e dataset_ai_groq_fast.csv.
 * 📊 **`dataset_train.csv`**: conjunto de treino obtido a partir do dataset_master_final.csv, excluindo 500 dados de cada classe.
 * 📊 **`dataset_test_balanced.csv`**: conjunto de teste equilibrado, contendo 500 dados de cada classe do dataset_master_final.csv.
 * 📊 **Outros CSVs (`dataset_ai.csv`, `dataset_human.csv`, etc.)**: Ficheiros de dados parciais em bruto que serviram de base.
